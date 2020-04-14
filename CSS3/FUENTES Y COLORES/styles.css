@@ -1,0 +1,40 @@
+/* Importar fuente */
+@font-face {
+    font-family: TitilliumWebFuenteCustom;
+    src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+
+h1 {
+    font-style: italic; /* Cursiva */
+    font-family: 'Mansalva', cursive; /* Fuente externa de Google Fonts */
+    text-transform: uppercase; /* Mayuscula */
+    font-size: 45px;
+
+    /** Colores **/
+
+    /* Colores del sistema */
+    color: mediumpurple;
+
+    /* Colores hexadecimales */
+    color: #cccccc;
+
+    /* Colores RGB */
+    color: rgb(52, 49, 194);
+
+    /* Colores RGBA */
+    color: rgb(52, 49, 194, 0.5);
+}
+
+h3 {
+    font-family: TitilliumWebFuenteCustom, "Comic Sans MS";
+    font-size: 25px;
+    /* Las medidas más comunes son px, em y % */
+    /* 1em = 16px */
+    font-weight: lighter; /* Delgado */
+}
+
+p {
+    font-family: sans-serif; 
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
