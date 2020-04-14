@@ -1,0 +1,88 @@
+/** ######## Selectores ######## **/
+
+/** Selector Universal **/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** Selector de Etiqueta **/
+h1 {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+/** Selector de ID **/
+#descripcion {
+    border: 5px solid black;
+    padding: 15px;
+}
+
+#titulo {
+    background: blue;
+    border: 2px dashed white;
+}
+
+/** Selector de Clase **/
+.parrafo {
+    font-style: italic;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+}
+
+.parrafo1 {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+/** Selector de Atributo **/
+#usuario form {
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/** Selector Hijo **/
+#menu > li > a {
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/** Prioridad **/
+#saludo h1 {
+    background: brown;
+}
+
+h1 {
+    background: purple !important;
+}
+

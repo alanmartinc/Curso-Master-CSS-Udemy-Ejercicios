@@ -1,0 +1,6 @@
+1) Selectores de etiquetas.
+2) Selector de ID.
+3) Selector de clase.
+4) Selector de atributo.
+5) Selectores hijo.
+6) Prioridad en CSS.
