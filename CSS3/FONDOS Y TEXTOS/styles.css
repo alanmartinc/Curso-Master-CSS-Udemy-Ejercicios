@@ -1,0 +1,40 @@
+body {
+    background-color: #ccc; /* Color de fondo */
+    background-image: url("img/patron1.jpg") ; /* Imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Fondo al tamaño total del desktop */
+    background-attachment: fixed; /* Fondo de una misma forma */
+    background-position: left bottom;
+    text-align: justify;
+    /* background-repeat:
+    repeat: repite la imagen
+    repeat-x: horizontal
+    repeat-y: vertical
+    no-repeat: no repite la imagen
+    */
+}
+
+#caja {
+    border: 5px solid black; /* Borde de la caja */
+    padding: 10px;
+    background-color: rgb(94, 131, 212);
+    color: white;
+    text-align: center; /* Texto centrado */
+    line-height: 50px; /* Altura de linea */
+    text-transform: uppercase; /* Mayuscula */
+    text-decoration: underline; /* Borde inferior */
+}
+
+h2 {
+    color: red;
+    background: white;
+    border: 5px solid red;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    text-indent: 15px; /* Indentacion */
+    word-spacing: 5px; /* Espaciado de palabras */
+    letter-spacing: 1px; /* Espaciado de letras */
+}

@@ -1,0 +1,2 @@
+1) Fondos.
+2) Propiedades CSS para textos.
