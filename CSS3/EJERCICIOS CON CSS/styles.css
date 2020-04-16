@@ -1,7 +1,7 @@
 /** EJERCICIO COMPLETO CON HTML Y CSS 
 (HECHO) 1. CREAR UN DOCUMENTO HTML Y VINCULARLO CON UN CSS.
 (HECHO) 2. CREAR UNA ESTRUCTURA HTML QUE CUENTE CON UN CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
-3. TODO EL CONTENIDO DEBE ESTAR DENTRO DEL CONTENEDOR GENERAL Y SU ANCHO SERÁ DE 1200PX Y ESTAR CENTRADO.
+(HECHO) 3. TODO EL CONTENIDO DEBE ESTAR DENTRO DEL CONTENEDOR GENERAL Y SU ANCHO SERÁ DE 1200PX Y ESTAR CENTRADO.
 4. EL HEADER DEBE OCUPAR EL 100% DEL ANCHO Y TENER UN TEXTO GRANDE CENTRADO.
 5. MENU DEBE TENER LOS ELEMENTOS UNO AL LADO DEL OTRO.
 6. EL CONTENIDO PRINCIPAL DEBE TENER UN ANCHO DEL 70%.
@@ -14,6 +14,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #general {
@@ -21,4 +22,13 @@
     margin: 0px auto; /* Centra el elemento en medio de la página */
     margin-top: 20px;
     border: 1px solid #ccc;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: rgb(15, 118, 236);
+    color: white;
+    text-align: center;
+    line-height: 90px;
 }
