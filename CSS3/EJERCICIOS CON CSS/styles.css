@@ -7,7 +7,7 @@
 (HECHO) 6. EL CONTENIDO PRINCIPAL DEBE TENER UN ANCHO DEL 70%.
 (HECHO) 7. EL CONTENIDO DENTRO DEL CONTENEDOR PRINCIPAL DEBE SER UNA CUADRICULA CON 4 LINEAS DE 2 CAJAS.
 (HECHO) 8. LA BARRA LATERAL DEBE TENER UN ANCHO DEL 30%.
-9. EL FOOTER DEBE TENER UN ANCHO DEL 100% DEL DIV QUE LO CONTIENE Y ESTAR ABAJO DEL TODO.
+(HECHO) 9. EL FOOTER DEBE TENER UN ANCHO DEL 100% DEL DIV QUE LO CONTIENE Y ESTAR ABAJO DEL TODO.
 **/
 
 * {
@@ -66,7 +66,6 @@
 
 #contenido {
     width: 69%;
-    border: 1px solid green;
     float: left;
 }
 
@@ -74,6 +73,8 @@
     float: left;
     width: 30%;
     border: 1px solid red;
+    min-height: 500px;
+    text-align: center;
 }
 
 #contenido > h1 {
@@ -92,4 +93,14 @@
     float: left;
     margin: 20px;
     margin-left: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #ccc;
 }
