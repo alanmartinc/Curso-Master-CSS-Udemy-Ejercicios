@@ -2,8 +2,8 @@
 (HECHO) 1. CREAR UN DOCUMENTO HTML Y VINCULARLO CON UN CSS.
 (HECHO) 2. CREAR UNA ESTRUCTURA HTML QUE CUENTE CON UN CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
 (HECHO) 3. TODO EL CONTENIDO DEBE ESTAR DENTRO DEL CONTENEDOR GENERAL Y SU ANCHO SERÁ DE 1200PX Y ESTAR CENTRADO.
-4. EL HEADER DEBE OCUPAR EL 100% DEL ANCHO Y TENER UN TEXTO GRANDE CENTRADO.
-5. MENU DEBE TENER LOS ELEMENTOS UNO AL LADO DEL OTRO.
+(HECHO) 4. EL HEADER DEBE OCUPAR EL 100% DEL ANCHO Y TENER UN TEXTO GRANDE CENTRADO.
+(HECHO) 5. MENU DEBE TENER LOS ELEMENTOS UNO AL LADO DEL OTRO.
 6. EL CONTENIDO PRINCIPAL DEBE TENER UN ANCHO DEL 70%.
 7. EL CONTENIDO DENTRO DEL CONTENEDOR PRINCIPAL DEBE SER UNA CUADRICULA CON 4 LINEAS DE 2 CAJAS.
 8. LA BARRA LATERAL DEBE TENER UN ANCHO DEL 30%.
@@ -31,4 +31,35 @@
     color: white;
     text-align: center;
     line-height: 90px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#menu {
+    background-color: #eee;
+}
+
+#menu ul li {
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+    display: block;
+    color: #444;
+    padding: 15px;
+}
+
+#menu ul li:hover {
+    background: rgb(15, 118, 236);
+    cursor: pointer;
+}
+
+#menu ul li:hover a {
+    color: white;
 }
