@@ -9,3 +9,16 @@
 8. LA BARRA LATERAL DEBE TENER UN ANCHO DEL 30%.
 9. EL FOOTER DEBE TENER UN ANCHO DEL 100% DEL DIV QUE LO CONTIENE Y ESTAR ABAJO DEL TODO.
 **/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#general {
+    width: 1200px;
+    margin: 0px auto; /* Centra el elemento en medio de la página */
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
