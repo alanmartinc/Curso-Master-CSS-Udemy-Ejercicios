@@ -1,0 +1,153 @@
+/** Sombras y Efectos **/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general {
+    width: 1200px;
+    margin: 0px auto; /* Centra el elemento en medio de la página */
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: rgb(15, 118, 236);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#menu {
+    background-color: #eee;
+}
+
+#menu ul li {
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+    display: block;
+    color: #444;
+    padding: 15px;
+}
+
+#menu ul li:hover {
+    background: rgb(15, 118, 236);
+    cursor: pointer;
+}
+
+#menu ul li:hover a {
+    color: white;
+}
+
+#contenido {
+    width: 69%;
+    float: left;
+}
+
+#lateral {
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    overflow-y: scroll; /* Se hace una barra de desplazamiento vertical */
+    /* overflow: 
+    visible: por defecto.
+    hidden: lo que esta fuera lo esconde.
+    */
+}
+
+#contenido > h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 0px 0px 5px #000; /* Sombra de texto */
+}
+
+#contenido .caja {
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px gray; /* Sombra de caja */
+    border-radius: 50px 10px 4px 61px; /* Redondear bordes */
+    border-radius: 50%; /* Circulo */
+}
+
+.sombra-interior {
+    box-shadow: 0px 0px 15px gray inset !important; /* Sombra interior */
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #ccc;
+}
+
+.libre {
+    position: absolute; /* Mover en diferentes lugares */
+    top: 0px;
+    z-index: 1;
+
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.libre2 {
+    position: absolute; /* Mover en diferentes lugares */
+    top: 40px;
+    z-index: 2; /* Indicar que capa esta por encima de otra */
+
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.fija {
+    position: fixed; /* Igual al absolute, pero siempre esta en una posicion fija */
+    top: 50%;
+    left: 0px;
+
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
