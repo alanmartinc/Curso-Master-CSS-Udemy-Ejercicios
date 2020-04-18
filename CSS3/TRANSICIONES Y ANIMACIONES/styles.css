@@ -1,0 +1,107 @@
+/** Transiciones y Animaciones **/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+ul li:first-child { /* Primer hijo */
+    color: purple;
+    font-weight: bold;
+}
+
+ul li:nth-child(2) { /* Seleccionar elementos de la lista */
+    color: orange;
+    font-weight: bold;
+}
+
+ul li:last-child { /* Ultimo hijo */
+    color: gray;
+    font-weight: bold;
+}
+
+#mi-enlace {
+    font-size: 20px;
+    color: lightsalmon;
+}
+
+#mi-enlace:link { /* Cuando no visites el enlace */
+    color: red;
+}
+
+#mi-enlace:visited { /* Cuando visites el enlace */
+    color: orangered;
+}
+
+#mi-enlace:hover { /* Cuando pases por encima */
+    color: blue;
+}
+
+#mi-enlace:active { /* Cuando estes pulsando */
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus { /* Cuando estes dentro */
+    border: 4px dashed red;
+}
+
+#boton {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(6, 83, 6);
+    transition: border 500ms, background 3s, border-radius 1s;
+}
+
+#boton:hover {
+    border-radius: 15px;
+    background: orangered;
+    border: 5px solid red;
+}
+
+#caja {
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento; /* Nombre del keyframes */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Misma velocidad */
+}
+
+@keyframes desplazamiento { /* Momentos de la animacion */
+     0% {
+        margin-left: 0px;
+        transform: rotate(0deg); /* Rotar 0 grados */
+    } 50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px; /* Circulo */
+    } 75% {
+        background: red;
+    } 100% { 
+        margin-left: 0px;
+        transform: rotate(0deg); /* Vuelva al origen */
+    }
+}
