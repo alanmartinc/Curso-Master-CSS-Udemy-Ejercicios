@@ -1,0 +1,133 @@
+// Variables
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+$color-secundario: rgb(122, 20, 20);
+
+// Uso de variables
+body {
+    // background-color: $color-fondo;
+}
+
+h1 {
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+
+p {
+    color: $color-secundario;
+}
+
+// Anidacion
+.caja {
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+
+    h1 {
+        color: blue;
+    }
+
+    p {
+        color: green;
+    }
+
+    .info {
+        font-size: 10px;
+
+        .author {
+            font-size: 15px;
+            color: orange;
+        }
+    }
+}
+
+// Mixins / Funciones
+@mixin crearBordes($color, $size, $shadow) {
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $shadow;
+}
+
+.caja {
+    @include crearBordes(red, 10px, black);
+}
+
+.listado {
+    @include crearBordes(green, 5px, yellow);
+}
+
+// Herencia
+%alert-normal {
+    border: 1px solid gray;
+    background: #eee;
+    color: gray;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.alert {
+    @extend %alert-normal;
+}
+
+.alert-danger {
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-success {
+    @extend %alert-normal;
+    color: green;
+    border-color: green;
+}
+
+// Operadores
+.clearfix {
+    clear: both;
+}
+
+h1 {
+    font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas {
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja {
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
+// Condicionales - IF
+$color-fondo: orange;
+
+h1 {
+    @if $color-fondo == #ccc {
+        color: black;
+    } @else if $color-fondo == black {
+        color: lightsalmon;
+    } @else {
+        color: pink;
+    }
+}
+
+// Bucles - For
+$contador: 1;
+
+@for $contador from 1 through 10 {
+    .listado ul li:nth-child(#{$contador}) {
+        color: orange;
+        font-size: $contador * 2px;
+    }
+} 

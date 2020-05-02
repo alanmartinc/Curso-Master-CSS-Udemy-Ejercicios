@@ -1,0 +1,140 @@
+h1 {
+  color: red;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+p {
+  color: #7a1414;
+}
+
+.caja {
+  border: 1px solid black;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+.caja h1 {
+  color: blue;
+}
+.caja p {
+  color: green;
+}
+.caja .info {
+  font-size: 10px;
+}
+.caja .info .author {
+  font-size: 15px;
+  color: orange;
+}
+
+.caja {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.listado {
+  border: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px yellow;
+}
+
+.alert-success, .alert-danger, .alert {
+  border: 1px solid gray;
+  background: #eee;
+  color: gray;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.alert-danger {
+  color: red;
+  border-color: red;
+}
+
+.alert-success {
+  color: green;
+  border-color: green;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.cajas {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.caja {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px;
+}
+
+h1 {
+  color: pink;
+}
+
+.listado ul li:nth-child(1) {
+  color: orange;
+  font-size: 2px;
+}
+
+.listado ul li:nth-child(2) {
+  color: orange;
+  font-size: 4px;
+}
+
+.listado ul li:nth-child(3) {
+  color: orange;
+  font-size: 6px;
+}
+
+.listado ul li:nth-child(4) {
+  color: orange;
+  font-size: 8px;
+}
+
+.listado ul li:nth-child(5) {
+  color: orange;
+  font-size: 10px;
+}
+
+.listado ul li:nth-child(6) {
+  color: orange;
+  font-size: 12px;
+}
+
+.listado ul li:nth-child(7) {
+  color: orange;
+  font-size: 14px;
+}
+
+.listado ul li:nth-child(8) {
+  color: orange;
+  font-size: 16px;
+}
+
+.listado ul li:nth-child(9) {
+  color: orange;
+  font-size: 18px;
+}
+
+.listado ul li:nth-child(10) {
+  color: orange;
+  font-size: 20px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,5 @@
+CMD
+
+Instalar NODEJS: node -v y npm -v
+Instalar SASS: npm install -g sass
+Ejecutar SASS: Entrar a la carpeta, luego escribir sass --watch estilos.scss styles.css
