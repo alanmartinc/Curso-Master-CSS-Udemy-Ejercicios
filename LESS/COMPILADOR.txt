@@ -1,0 +1,4 @@
+CMD
+
+Instalar LESS: npm install -g less
+Ejecutar SASS: Entrar a la carpeta, luego escribir lessc estilos.less styles.css
