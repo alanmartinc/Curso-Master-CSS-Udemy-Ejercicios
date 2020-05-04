@@ -1,0 +1,53 @@
+body {
+    --rojo: red; /* Variable */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#layout {
+    display: flex;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow: row wrap;
+    /* justify-content: start, end, center, left, right, space-around, space-between, space-evenly; */
+    /* align-items: baseline, center, flex-start, flex-end; */
+    /* align-self: center, flex-start, flex-end; */
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.caja {
+    flex-grow: 1;
+    flex-basis: calc((100% / 3) - 68px);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+}
+
+.red {
+    /* order: 1; */
+    /* flex-grow: 5; */
+    background: var(--rojo); /* Nombre de variable */
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+    background: blue;
+}
+
+.orange {
+    /* flex-grow: 5; */
+    flex-basis: 100%;
+    background: orange;
+}
