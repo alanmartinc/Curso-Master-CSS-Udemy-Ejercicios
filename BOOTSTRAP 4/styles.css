@@ -1,0 +1,41 @@
+#menu {
+    height: 50px;
+}
+
+#menu ul {
+    text-decoration: none;
+    list-style: none;
+    line-height: 50px;
+}
+
+.item {
+    height: 150px;
+}
+
+.lateral {
+    height: 250px;
+}
+
+.lateral > div {
+    height: calc(250px/3);
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+}
+
+@media (max-width:768px) {
+    #menu {
+        height: auto;
+    }
+}
+
+#slider {
+    height: 450px;
+    overflow: hidden;
+}
+
+#slider img {
+    height: 450px;
+}
